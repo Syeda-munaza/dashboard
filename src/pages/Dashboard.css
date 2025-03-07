@@ -1,0 +1,195 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f0f4f8;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1e3a5f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* .profile {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+} */
+.profile {
+  text-align: center;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  background-image: url("../../public/login.jpg") !important;
+
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 250px;
+  margin-left: 30px;
+}
+
+nav ul li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  /* color: black; */
+}
+
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  position: relative;
+}
+
+.card p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: bold;
+  color: #666;
+}
+
+.card h2 {
+  margin: 5px 0 0 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Icon positioning */
+.card svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: orange;
+  font-size: 1.5rem;
+}
+
+.chart-section {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.bar-chart,
+.progress-chart {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  position: relative;
+}
+
+.chart-placeholder {
+  height: 150px;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+  margin: 15px 0;
+}
+
+.check-btn {
+  background-color: #ff9900;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.progress-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circle-chart {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#ff9900 45%, #ddd 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.legend {
+  list-style: none;
+  padding: 0;
+}
+
+.legend li {
+  margin: 5px 0;
+}
+
+.calendar-chart {
+  display: flex;
+  gap: 15px;
+}
+
+.area-chart {
+  flex: 1;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.area-chart .chart-placeholder {
+  height: 150px;
+}
+
+h2,
+h3 {
+  margin: 0;
+  /* color: white; */
+}
